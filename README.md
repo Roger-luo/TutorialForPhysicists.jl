@@ -1,9 +1,9 @@
 # TutorialForPhysicists
 
 [![][docs-latest-img]][docs-latest-url]
-[![Build Status](travis-master-img)](travis-master-url)
-[![Coverage Status](coveralls-master-img)](coveralls-master-url)
-[![codecov.io](codcov-master-img)](codcov-master-url)
+[![](travis-master-img)](travis-master-url)
+[![](coveralls-master-img)](coveralls-master-url)
+[![](codcov-master-img)](codcov-master-url)
 
 
 Julia Tutorial for Physicists. You can access the presentation here:
