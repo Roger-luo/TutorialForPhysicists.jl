@@ -1,9 +1,9 @@
 # TutorialForPhysicists
 
 [![][docs-latest-img]][docs-latest-url]
-[![](travis-master-img)](travis-master-url)
-[![](coveralls-master-img)](coveralls-master-url)
-[![](codcov-master-img)](codcov-master-url)
+[![Build Status](travis-master-img)](travis-master-url)
+[![Code Coverage](coveralls-master-img)](coveralls-master-url)
+[![codecov.io](codcov-master-img)](codcov-master-url)
 
 
 Julia Tutorial for Physicists. You can access the presentation here:
@@ -55,17 +55,11 @@ Roger Luo
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
 [docs-stable-url]: http://rogerluo.me/TutorialForPhysicists.jl/stable
 
-[travis-master-img]:
-https://travis-ci.org/Roger-luo/TutorialForPhysicists.jl.svg?branch=master
-[travis-master-url]:
-https://travis-ci.org/Roger-luo/TutorialForPhysicists.jl
+[travis-master-img]:https://travis-ci.org/Roger-luo/TutorialForPhysicists.jl.svg?branch=master
+[travis-master-url]:https://travis-ci.org/Roger-luo/TutorialForPhysicists.jl
 
-[coveralls-master-img]:
-https://coveralls.io/repos/Roger-luo/TutorialForPhysicists.jl/badge.svg?branch=master&service=github
-[coveralls-master-url]:
-https://coveralls.io/github/Roger-luo/TutorialForPhysicists.jl?branch=master
+[coveralls-master-img]:https://coveralls.io/repos/Roger-luo/TutorialForPhysicists.jl/badge.svg?branch=master&service=github
+[coveralls-master-url]:https://coveralls.io/github/Roger-luo/TutorialForPhysicists.jl?branch=master
 
-[codcov-master-img]:
-http://codecov.io/github/Roger-luo/TutorialForPhysicists.jl/coverage.svg?branch=master
-[codcov-master-url]:
-http://codecov.io/github/Roger-luo/TutorialForPhysicists.jl?branch=master
+[codcov-master-img]:http://codecov.io/github/Roger-luo/TutorialForPhysicists.jl/coverage.svg?branch=master
+[codcov-master-url]:http://codecov.io/github/Roger-luo/TutorialForPhysicists.jl?branch=master
