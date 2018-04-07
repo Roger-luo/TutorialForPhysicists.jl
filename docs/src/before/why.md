@@ -66,7 +66,8 @@ Moreover, in the field of quantum physics and quantum chemistry, we have
 
 However, Python is only an wrapper in most packages above, and for projects written mainly in Python like **Project Q** have been sufferring performance issue.
 
-```python
+```shell
+# projectq & scipy benchmark 6 bit time evolution, QAOA algorithm.
 projectq 19.45s user 0.72s system 100% cpu 20.173 total
 scipy  10.68s user 0.13s system 100% cpu 10.813 total
 ```
