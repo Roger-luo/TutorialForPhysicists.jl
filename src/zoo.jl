@@ -107,7 +107,7 @@ end
 name(bear::Dima) = "Dima"
 
 play(a::Abram, b::Dima, c::Kohen) = "Abram, Dima and Kohen often play together"
-# uncomment this to see what happen
+# * uncomment this to see what happen
 # play(a::Abram, b::Dima, c::Kitty) = "Abram and Dima play with Kitty too"
 
 # Playground
