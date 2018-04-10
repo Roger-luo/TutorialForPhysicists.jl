@@ -21,6 +21,7 @@ makedocs(
             "demo/lattice.md",
         ],
         "Tool Chain for Physicists" => "toolchain.md",
+        "FAQ" => "FAQ.md",
     ],
     html_prettyurls = !("local" in ARGS),
     html_canonical = "https://rogerluo.me/TutorialForPhysicists.jl/latest/",

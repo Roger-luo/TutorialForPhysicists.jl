@@ -41,7 +41,7 @@ shell> julia
 type the following command in your julia REPL
 
 ```julia-repl
-julia> Pkg.clone(git@github.com:Roger-luo/JuliaForPhysicist.jl.git)
+julia> Pkg.clone(git@github.com:Roger-luo/TutorialForPhysicists.jl.git)
 ```
 
 ## Author
