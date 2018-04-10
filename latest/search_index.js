@@ -13,7 +13,39 @@ var documenterSearchIndex = {"docs": [
     "page": "Introduction",
     "title": "A Julia Tutorial For Physicists",
     "category": "section",
-    "text": "Welcome to this tutorial. I\'m sure before you read this tutorial you have heard a lot about amazing features of the Julia language. But I will mention some features I loved when I was developing my own package and program for quantum physics here:"
+    "text": "This is a Julia tutorial for Physicists. You will learn how to use Julia and how to use it for Physics here."
+},
+
+{
+    "location": "#Slides-1",
+    "page": "Introduction",
+    "title": "Slides",
+    "category": "section",
+    "text": "You can access the presentation online: The Julia Language"
+},
+
+{
+    "location": "#Contents-1",
+    "page": "Introduction",
+    "title": "Contents",
+    "category": "section",
+    "text": "Pages = [\n    \"install.md\",\n    \"basics.md\",\n    \"toolchain.md\",\n    \"before/why.md\",\n    \"before/when.md\",\n    \"demo/README.md\",\n]"
+},
+
+{
+    "location": "#Github-1",
+    "page": "Introduction",
+    "title": "Github",
+    "category": "section",
+    "text": "The tutorial is written in a standard Julia package on Github, you can find it here: TutorialForPhysicists.jl"
+},
+
+{
+    "location": "#About-the-author-1",
+    "page": "Introduction",
+    "title": "About the author",
+    "category": "section",
+    "text": "Roger Luo"
 },
 
 {
@@ -277,7 +309,135 @@ var documenterSearchIndex = {"docs": [
     "page": "Tool Chain for Physicists",
     "title": "Tool Chain for Physicists",
     "category": "section",
+    "text": "There are some useful tools (Packages) that will help you work with Julia in Physics, but you might want to find what you want first in Julia.jl.Julia.jl Curated decibans of Julia language."
+},
+
+{
+    "location": "toolchain/#Tensor-(Multi-dimensional-Array)-Operations-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Tensor (Multi-dimensional Array) Operations",
+    "category": "section",
+    "text": "TensorOperations Julia package for tensor contractions and related operations\nEinsum.jl Einstein summation notation in Julia\nCuArrays.jl A Curious Cumulation of CUDA Cuisine \nStaticArrays.jl Statically sized arrays for Julia\nCliffords.jl Efficient calculation of Clifford circuits in Julia."
+},
+
+{
+    "location": "toolchain/#Physics-Related-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Physics Related",
+    "category": "section",
+    "text": "QuantumLab.jl A workbench for Quantum Chemistry and Quantum Physics in Julia\nQuantumOptics.jl Library for the numerical simulation of closed as well as open quantum systems."
+},
+
+{
+    "location": "toolchain/#Algorithms-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Algorithms",
+    "category": "section",
+    "text": "Expokit.jl This package provides Julia implementations of some routines contained in EXPOKIT.\nIterativeSolvers.jl Iterative algorithms for solving linear systems, eigensystems, and singular value problems \nLowRankModels.jl LowRankModels.jl is a julia package for modeling and fitting generalized low rank models.\nJuMP.jl Modeling language for Mathematical Optimization (linear, mixed-integer, conic, semidefinite, nonlinear)"
+},
+
+{
+    "location": "toolchain/#Auto-Differentiation-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Auto Differentiation",
+    "category": "section",
+    "text": "ForwardDiff.jl Forward Mode Automatic Differentiation for Julia\nReverseDiffSource.jl Reverse automated differentiation from source\nAutoDiffSource.jl Julia automatic differentiation with source code transformation"
+},
+
+{
+    "location": "toolchain/#Data-Structures-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Data Structures",
+    "category": "section",
+    "text": "LightGraphs.jl An optimized graphs package for Julia\nAbstractTrees.jl Abstract julia interfaces for working with trees\nDendriform.jl Dendriform di-algebra algorithms to compute using Loday\'s arithmetic on groves of planar binary trees."
+},
+
+{
+    "location": "toolchain/#Deep-Learning-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Deep Learning",
+    "category": "section",
+    "text": "Knet.jl Koç University deep learning framework.\nTensorFlow.jl A Julia wrapper for TensorFlow\nMXNet.jl MXNet Julia Package - flexible and efficient deep learning in Julia"
+},
+
+{
+    "location": "toolchain/#Serialization-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Serialization",
+    "category": "section",
+    "text": "JLD.jl Saving and loading julia variables while preserving native types\nJLD2.jl HDF5-compatible file format in pure Julia"
+},
+
+{
+    "location": "toolchain/#Developer\'s-Tools-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Developer\'s Tools",
+    "category": "section",
+    "text": "PackageCompiler.jl  Compile your Julia Package\nStatProfilerHTML.jl Show Julia profiling data in an explorable HTML page\nCxx.jl The Julia C++ Interface"
+},
+
+{
+    "location": "toolchain/#Symbolic-and-Metaprogramming-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Symbolic & Metaprogramming",
+    "category": "section",
+    "text": "Symata.jl language for symbolic mathematics\nLazy.jl provides Julia with the cornerstones of functional programming"
+},
+
+{
+    "location": "toolchain/#Visualization-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Visualization",
+    "category": "section",
+    "text": "Interact.jl Interactive widgets to play with your Julia code\nPlots.jl Powerful convenience for Julia visualizations and data analysis"
+},
+
+{
+    "location": "FAQ/#",
+    "page": "FAQ",
+    "title": "FAQ",
+    "category": "page",
     "text": ""
+},
+
+{
+    "location": "FAQ/#Frequently-Asked-Questions-1",
+    "page": "FAQ",
+    "title": "Frequently Asked Questions",
+    "category": "section",
+    "text": "Firstly for usage please reference the Julia documentation, here I will offer some anwser for questions I was asked more frequently from my personal view."
+},
+
+{
+    "location": "FAQ/#A-Selection-of-FAQ-from-Official-Documentation-1",
+    "page": "FAQ",
+    "title": "A Selection of FAQ from Official Documentation",
+    "category": "section",
+    "text": ""
+},
+
+{
+    "location": "FAQ/#How-do-I-delete-an-object-in-memory?-1",
+    "page": "FAQ",
+    "title": "How do I delete an object in memory?",
+    "category": "section",
+    "text": "Julia does not have an analog of MATLAB\'s clear function; once a name is defined in a Julia session (technically, in module Main), it is always present.If memory usage is your concern, you can always replace objects with ones that consume less memory. For example, if A is a gigabyte-sized array that you no longer need, you can free the memory with A = 0. The memory will be released the next time the garbage collector runs; you can force this to happen with gc()."
+},
+
+{
+    "location": "FAQ/#What-does-\"type-stable\"-mean?-1",
+    "page": "FAQ",
+    "title": "What does \"type-stable\" mean?",
+    "category": "section",
+    "text": "It means that the type of the output is predictable from the types of the inputs. In particular, it means that the type of the output cannot vary depending on the values of the inputs. The following code is not type-stable:function unstable(flag::Bool)\n    if flag\n        return 1\n    else\n        return 1.0\n    end\nendIt returns either an Int or a Float64 depending on the value of its argument. Since Julia can\'t predict the return type of this function at compile-time, any computation that uses it will have to guard against both types possibly occurring, making generation of fast machine code difficult."
+},
+
+{
+    "location": "FAQ/#Lack-of-explicit-return-in-Julia,-heartache-or-happiness?-1",
+    "page": "FAQ",
+    "title": "Lack of explicit return in Julia, heartache or happiness?",
+    "category": "section",
+    "text": "Feature Description Julia\'s function will return the last of a function implicitly. See this maillist Lack of explicit return in Julia, heartache or happiness?"
 },
 
 ]}
