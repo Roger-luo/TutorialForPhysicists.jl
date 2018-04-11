@@ -41,13 +41,16 @@ shell> julia
 type the following command in your julia REPL
 
 ```julia-repl
-julia> Pkg.clone(git@github.com:Roger-luo/TutorialForPhysicists.jl.git)
+julia> Pkg.clone("git@github.com:Roger-luo/TutorialForPhysicists.jl.git")
 ```
 
 ## Author
 
 Roger Luo
 
+#### By me a cup of coffee
+
+![]
 
 [docs-latest-img]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-latest-url]: http://rogerluo.me/TutorialForPhysicists.jl/latest
