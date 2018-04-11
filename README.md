@@ -2,8 +2,9 @@
 
 [![][docs-latest-img]][docs-latest-url]
 [![Build Status][travis-master-img]][travis-master-url]
-[![Code Coverage][coveralls-master-img]][coveralls-master-url]
-[![codecov.io][codcov-master-img]][codcov-master-url]
+
+<!-- [![Code Coverage][coveralls-master-img]][coveralls-master-url]
+[![codecov.io][codcov-master-img]][codcov-master-url] -->
 
 
 Julia Tutorial for Physicists. You can access the presentation here:
@@ -47,10 +48,6 @@ julia> Pkg.clone("https://github.com/Roger-luo/TutorialForPhysicists.jl.git")
 ## Author
 
 Roger Luo
-
-#### By me a cup of coffee
-
-![]
 
 [docs-latest-img]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-latest-url]: http://rogerluo.me/TutorialForPhysicists.jl/latest
