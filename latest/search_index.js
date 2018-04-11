@@ -237,7 +237,7 @@ var documenterSearchIndex = {"docs": [
     "page": "When choose Julia",
     "title": "When you need Julia",
     "category": "section",
-    "text": "Choose Julia, if you usually need to optimize Python with C/C++/Fortran/etc.\nChoose Julia, if your problem requires a lot abstractions but also sensitive to performance.\nChoose Julia, if your interface will looks better with a DSL, or some addons on its original language. (like einsum for tensor contraction)\nYour collaborator or supervisor use Julia."
+    "text": "if you usually need to optimize Python with C/C++/Fortran/etc.\nif your program reqiures a lot loops and matrix multiplications and other computation heavy tasks\nif your problem requires a lot abstractions but also sensitive to performance.\nif your interface will looks better with a DSL, or some addons on its original language. (like einsum for tensor contraction)\nYour collaborator or supervisor use Julia."
 },
 
 {
@@ -245,7 +245,7 @@ var documenterSearchIndex = {"docs": [
     "page": "When choose Julia",
     "title": "When you don\'t need Julia",
     "category": "section",
-    "text": "Your program is heavily based on pure Python and its packages (like Pytorch, MXNet, TensorFlow, etc.), and there is no better or equivalent Julia packages.\nYou don\'t care performance very much at the moment, about 5x slower is acceptable. (tasks like GUI, plotting, etc.)\nYour collaborator or supervisor do not accept new language."
+    "text": "Your program is heavily based on pure Python and its packages (like Pytorch, MXNet, TensorFlow, etc.), and there is no better or equivalent Julia packages.\nYou care about performance, but most of your functions and commands will only be executed few times. (because we have a JIT overhead in Julia)\nYou don\'t care performance very much at the moment, about 5x slower is acceptable. (tasks like GUI, plotting, etc.)\nYour collaborator or supervisor do not accept new language."
 },
 
 {
