@@ -164,4 +164,4 @@ julia> LHS = randn(5000, 10, 5000); X = randn(5000, 2, 5000); Y = randn(10, 2, 1
 
 ## Conclusion
 
-Julia's metaprogramming can provide more efficient tensor contraction by direct code generation.
+Julia's metaprogramming can provide more efficient tensor contraction by direct code generation. Since we don't actually care about small tensors' memory occupation, `numpy` is not a good choice for quantum physics. 
