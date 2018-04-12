@@ -7,106 +7,161 @@ We did several benchmarks that related to frequently used operations in quantum 
 
 ### Julia
 
-```
-LHS = randn(n, 10, n); X = randn(n, 2, n); Y = randn(10, 2, 10, 2);
-```
-
-n = 100
-Maximum resident set size (kbytes): 230008
-n = 150
-Maximum resident set size (kbytes): 258848
-n = 200
-Maximum resident set size (kbytes): 262628
-n = 250
-Maximum resident set size (kbytes): 349628
-n = 300
-Maximum resident set size (kbytes): 332672
-n = 400
-Maximum resident set size (kbytes): 466380
-
-**Python**
-
-```
-Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
-Type 'copyright', 'credits' or 'license' for more information
-IPython 6.3.1 -- An enhanced Interactive Python. Type '?' for help.
-
-In [1]: from einsum import propagate
-
-In [2]: import numpy as np
-
-In [3]: np.__version__
-Out[3]: '1.14.2'
-
-In [4]:     LHS = np.random.randn(200, 10, 200)
-   ...:     X = np.random.randn(200, 2, 200)
-   ...:     Y = np.random.randn(10, 2, 10, 2)
-   ...: 
-   ...: 
-
-In [5]: %timeit propagate(LHS, X, Y)
-326 ms ± 20.2 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-```
-
-**Julia**
 
 ```julia-repl
-julia> include("einsum.jl")
-propagate (generic function with 1 method)
+julia> versioninfo()
+Julia Version 0.6.3-pre.0
+Commit 93168a6 (2017-12-18 07:11 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz
+  WORD_SIZE: 64
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-3.9.1 (ORCJIT, haswell)
 
 julia> using BenchmarkTools
 
-julia> LHS = randn(200, 10, 200); X = randn(200, 2, 200); Y = randn(10, 2, 10, 2);
+julia> include("einsum.jl")
+propagate (generic function with 1 method)
 
-julia> @benchmark propagate(LHS, X, Y)
+julia> n = 200
+200
+
+julia> LHS = randn(n, 10, n); X = randn(n, 2, n); Y = randn(10, 2, 10, 2);
+
+julia> @benchmark propagate($LHS, $X, $Y)
 BenchmarkTools.Trial: 
   memory estimate:  27.48 MiB
   allocs estimate:  115
   --------------
-  minimum time:     23.645 ms (2.11% GC)
-  median time:      24.593 ms (1.99% GC)
-  mean time:        25.365 ms (4.54% GC)
-  maximum time:     101.740 ms (75.41% GC)
+  minimum time:     25.286 ms (2.26% GC)
+  median time:      25.904 ms (2.22% GC)
+  mean time:        26.811 ms (5.16% GC)
+  maximum time:     106.110 ms (76.47% GC)
   --------------
-  samples:          197
+  samples:          187
   evals/sample:     1
 ```
 
+### Python
+
+#### numpy.einsum
+
+```ipython
+In [1]: import numpy as np
+
+In [2]: from einsum import propagate
+
+In [3]: import sys
+
+In [4]: sys.version_info
+Out[4]: sys.version_info(major=3, minor=5, micro=2, releaselevel='final', serial=0)
+
+In [5]: sys.version
+Out[5]: '3.5.2 (default, Nov 23 2017, 16:37:01) \n[GCC 5.4.0 20160609]'
+
+In [6]: np.__version__
+Out[6]: '1.14.2'
+
+In [7]: np.__config__.show()
+lapack_opt_info:
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+blas_mkl_info:
+  NOT AVAILABLE
+openblas_lapack_info:
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+lapack_mkl_info:
+  NOT AVAILABLE
+blis_info:
+  NOT AVAILABLE
+openblas_info:
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+blas_opt_info:
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+
+In [8]: LHS = np.random.randn(200, 10, 200); X = np.random.randn(200, 2, 200); Y
+   ...:  = np.random.randn(10, 2, 10, 2);
+
+In [9]: %timeit propagate(LHS, X, Y)
+297 ms ± 15.2 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+```
+
+#### numpy.tensordot
+
+```ipython
+In [1]: import sys, numpy as np
+
+In [2]: from tensordot import propagate
+
+In [3]: sys.version
+Out[3]: '3.5.2 (default, Nov 23 2017, 16:37:01) \n[GCC 5.4.0 20160609]'
+
+In [4]: np.__version__
+Out[4]: '1.14.2'
+
+In [5]: np.__config__.show()
+openblas_info:
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+blis_info:
+  NOT AVAILABLE
+lapack_opt_info:
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+openblas_lapack_info:
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+blas_mkl_info:
+  NOT AVAILABLE
+lapack_mkl_info:
+  NOT AVAILABLE
+blas_opt_info:
+    libraries = ['openblas', 'openblas']
+    library_dirs = ['/usr/local/lib']
+    language = c
+    define_macros = [('HAVE_CBLAS', None)]
+
+In [6]: LHS = np.random.randn(200, 10, 200); X = np.random.randn(200, 2, 200); Y
+   ...:  = np.random.randn(10, 2, 10, 2);
+
+In [7]: %timeit propagate(LHS, X, Y)
+45.1 ms ± 2.71 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+```
+
+## Memory Allocation
+
+Julia has an 200MB+ overhead for loading LLVM and BLAS into the memory. Therefore, for small tensors, Julia always allocates more. We use the `propagate` function implemented in this repo with the following parameters, this will allocates about 50% of the memory on a 12GB laptop. The results are similar with numpy implementation, they both use up about 51% of the RAM.
 
 ```
-(julia-stable) ➜  benchmark git:(master) ✗ /usr/bin/time --verbose python einsum.py 
-Python version: 3.5.2 (default, Nov 23 2017, 16:37:01) 
-[GCC 5.4.0 20160609]
-numpy version: 1.14.2
-	Command being timed: "python einsum.py"
-	User time (seconds): 30.05
-	System time (seconds): 0.71
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.46
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 46580
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 393828
-	Voluntary context switches: 12
-	Involuntary context switches: 282
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 0
-
+              total        used        free      shared  buff/cache   available
+Mem:       12173840     2559440     8500468      440380     1113932     8852428
+Swap:      12455932     2390016    10065916
 ```
 
-## Kronecker Product
+```julia
+julia> LHS = randn(5000, 10, 5000); X = randn(5000, 2, 5000); Y = randn(10, 2, 10, 2);
+```
 
-100x100 sparsity 0.1
+## Conclusion
 
-python: 5ms
-julia: 3.38ms
+Julia's metaprogramming can provide more efficient tensor contraction by direct code generation.
