@@ -9,7 +9,7 @@ You can install the julia language interpreter from its official site [julialang
 
 ## Setup your Julia Environment
 
-*For *unix users*
+*For \*nix users*
 
 If you want to use virtualenv to control julia binaries and compile it with other languages in the future. I suggest you [hatch](https://github.com/ofek/hatch), a modern project, package, and virtual env manager.
 
