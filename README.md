@@ -13,12 +13,20 @@ Julia Tutorial for Physicists. You can access the presentation here:
 
 ## Contents
 
+### Tutorial Materials
 - [Setup Your Julia Environment](/docs/src/install.md)
 - [Tutorial Contents](/docs/src/demo/README.md)
 - [Tool Chain for Physicists](/docs/src/toolchain.md)
 - [Why Julia](/docs/src/before/why.md)
 - [Notebooks](/notebooks/README.md)
 - [Demos](/src/README.md)
+
+### Package Development
+- [Benchmark](/benchmark/README.md)
+- [Source code](/src/README.md)
+- [Tests](/test/README.md)
+- [Documentation](/doc/README.md)
+- [Dependencies](/deps/README.md)
 
 ## Installation
 
