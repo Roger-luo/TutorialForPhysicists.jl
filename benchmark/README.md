@@ -8,7 +8,7 @@ We did several benchmarks that related to frequently used operations in quantum 
 ### Julia
 
 
-```julia-repl
+```julia
 julia> versioninfo()
 Julia Version 0.6.3-pre.0
 Commit 93168a6 (2017-12-18 07:11 UTC)
@@ -49,7 +49,7 @@ BenchmarkTools.Trial:
 
 #### numpy.einsum
 
-```ipython
+```python
 In [1]: import numpy as np
 
 In [2]: from einsum import propagate
@@ -102,7 +102,7 @@ In [9]: %timeit propagate(LHS, X, Y)
 
 #### numpy.tensordot
 
-```ipython
+```python
 In [1]: import sys, numpy as np
 
 In [2]: from tensordot import propagate
