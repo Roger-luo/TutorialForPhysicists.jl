@@ -77,7 +77,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Installation",
     "title": "Setup your Julia Environment",
     "category": "section",
-    "text": "For *unix usersIf you want to use virtualenv to control julia binaries and compile it with other languages in the future. I suggest you hatch, a modern project, package, and virtual env manager.To install hatch, you need Python3.5+$ pip3 install --user hatchcreate a virtualenv by the following command$ hatch env julia-stable"
+    "text": "For \\nix users*If you want to use virtualenv to control julia binaries and compile it with other languages in the future. I suggest you hatch, a modern project, package, and virtual env manager.To install hatch, you need Python3.5+$ pip3 install --user hatchcreate a virtualenv by the following command$ hatch env julia-stable"
 },
 
 {
