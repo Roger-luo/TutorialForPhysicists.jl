@@ -61,7 +61,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Installation",
     "title": "Installation",
     "category": "section",
-    "text": "If you don\'t care dependencies, Julia itself contains a environment manager for its own packages, you can just install your Julia program to global scope of the system."
+    "text": ""
 },
 
 {
@@ -73,11 +73,43 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "install/#Setup-your-Julia-Environment-1",
+    "location": "install/#The-Easy-Way-1",
     "page": "Installation",
-    "title": "Setup your Julia Environment",
+    "title": "The Easy Way",
     "category": "section",
-    "text": "For \\nix users*If you want to use virtualenv to control julia binaries and compile it with other languages in the future. I suggest you hatch, a modern project, package, and virtual env manager.To install hatch, you need Python3.5+$ pip3 install --user hatchcreate a virtualenv by the following command$ hatch env julia-stable"
+    "text": ""
+},
+
+{
+    "location": "install/#Linux-1",
+    "page": "Installation",
+    "title": "Linux",
+    "category": "section",
+    "text": "Download the latest binary version, unpack and link the binary file (path/to/julia-1.x.x/bin/julia) to your system pathsudo ln -s /path/to/julia-1.x.x/bin/julia /usr/bin/juliaCheck your installation by typing julia in your shell."
+},
+
+{
+    "location": "install/#Mac-OS-1",
+    "page": "Installation",
+    "title": "Mac OS",
+    "category": "section",
+    "text": "Download the .dmg file, click and install. You may also want to set the path"
+},
+
+{
+    "location": "install/#Windows-1",
+    "page": "Installation",
+    "title": "Windows",
+    "category": "section",
+    "text": "Follow the offical guide."
+},
+
+{
+    "location": "install/#The-Hard-Way-(From-Source)-1",
+    "page": "Installation",
+    "title": "The Hard Way (From Source)",
+    "category": "section",
+    "text": ""
 },
 
 {
@@ -85,7 +117,23 @@ var documenterSearchIndex = {"docs": [
     "page": "Installation",
     "title": "Build from source",
     "category": "section",
-    "text": "Build julia from source will help you enable some platform related optimizations. First, clone julia master branch$ git clone https://github.com/JuliaLang/julia.gitBuild stable version$ cd julia\n$ git checkout v0.6.3Add this to Make.user fileprefix=/home/YOUR_USERNAME/.virtualenvs/julia-stable$ make && make install "
+    "text": "Build julia from source will help you enable some platform related optimizations. First, clone julia master branch$ git clone https://github.com/JuliaLang/julia.gitBuild stable version (using v1.0.0 as an example)$ cd julia\n$ git checkout v1.0.0Add this to Make.user fileprefix=/home/YOUR_USERNAME/.virtualenvs/julia-stable$ make && make install "
+},
+
+{
+    "location": "install/#The-Hardest-Way-(using-Virtual-Environment,-shall-we-remove-this-part?-@Roger)-1",
+    "page": "Installation",
+    "title": "The Hardest Way (using Virtual Environment, shall we remove this part? @Roger)",
+    "category": "section",
+    "text": "If you don\'t care dependencies, Julia itself contains a environment manager for its own packages, you can just install your Julia program to global scope of the system."
+},
+
+{
+    "location": "install/#Setup-your-Julia-Environment-1",
+    "page": "Installation",
+    "title": "Setup your Julia Environment",
+    "category": "section",
+    "text": "For \\nix users*If you want to use virtualenv to control julia binaries and compile it with other languages in the future. I suggest you hatch, a modern project, package, and virtual env manager.To install hatch, you need Python3.5+$ pip3 install --user hatchcreate a virtualenv by the following command$ hatch env julia-stable"
 },
 
 {
@@ -313,27 +361,59 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "toolchain/#Tensor-(Multi-dimensional-Array)-Operations-1",
+    "location": "toolchain/#Tensor-Operations-and-Linear-Algebra-1",
     "page": "Tool Chain for Physicists",
-    "title": "Tensor (Multi-dimensional Array) Operations",
+    "title": "Tensor Operations and Linear Algebra",
     "category": "section",
-    "text": "TensorOperations Julia package for tensor contractions and related operations\nEinsum.jl Einstein summation notation in Julia\nCuArrays.jl A Curious Cumulation of CUDA Cuisine \nStaticArrays.jl Statically sized arrays for Julia\nCliffords.jl Efficient calculation of Clifford circuits in Julia."
+    "text": ""
 },
 
 {
-    "location": "toolchain/#Physics-Related-1",
+    "location": "toolchain/#Tensor-Basics-1",
     "page": "Tool Chain for Physicists",
-    "title": "Physics Related",
+    "title": "Tensor Basics",
     "category": "section",
-    "text": "QuantumLab.jl A workbench for Quantum Chemistry and Quantum Physics in Julia\nQuantumOptics.jl Library for the numerical simulation of closed as well as open quantum systems."
+    "text": "TensorOperations Julia package for tensor contractions and related operations\nEinsum.jl Einstein summation notation in Julia\nCuArrays.jl A Curious Cumulation of CUDA Cuisine \nStaticArrays.jl Statically sized arrays for Julia\nLuxurySparse.jl High performance extensions for sparse matrices."
 },
 
 {
-    "location": "toolchain/#Algorithms-1",
+    "location": "toolchain/#Large-Sparse-Matrix-Eigensolvers-1",
     "page": "Tool Chain for Physicists",
-    "title": "Algorithms",
+    "title": "Large Sparse Matrix Eigensolvers",
     "category": "section",
-    "text": "Expokit.jl This package provides Julia implementations of some routines contained in EXPOKIT.\nIterativeSolvers.jl Iterative algorithms for solving linear systems, eigensystems, and singular value problems \nLowRankModels.jl LowRankModels.jl is a julia package for modeling and fitting generalized low rank models.\nJuMP.jl Modeling language for Mathematical Optimization (linear, mixed-integer, conic, semidefinite, nonlinear)"
+    "text": "IterativeSolvers.jl Iterative algorithms for solving linear systems, eigensystems, and singular value problems \nKrylovKit.jl A Julia package collecting a number of Krylov-based algorithms for linear problems, singular value and eigenvalue problems and the application of functions of linear maps or operators to vectors.\nJacobiDavidson.jl An implementation of Jacobi-Davidson in Julia.\nArnoldiMethod.jl The Implicitly Restarted Arnoldi Method, natively in Julia.\nKrylov.jl: part of the   JuliaSmoothOptimizers organisation, solves linear systems and least square problems, specific for linear operators from   LinearOperators.jl.\nKrylovMethods.jl: specific for sparse matrices"
+},
+
+{
+    "location": "toolchain/#Others-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Others",
+    "category": "section",
+    "text": "Expokit.jl This package provides Julia implementations of some routines contained in EXPOKIT.\nExpmV.jl This is a Julia translation of the MATLAB implementation of Al-Mohy and Higham\'s function for computing expm(tA)v when A is sparse, without explicitly computing expm(A).\nJuMP.jl Modeling language for Mathematical Optimization (linear, mixed-integer, conic, semidefinite, nonlinear)\nLowRankModels.jl LowRankModels.jl is a julia package for modeling and fitting generalized low rank models."
+},
+
+{
+    "location": "toolchain/#Mathematics-and-Physics-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Mathematics and Physics",
+    "category": "section",
+    "text": "Cliffords.jl Efficient calculation of Clifford circuits in Julia.\nStatsBase.jl StatsBase.jl is a Julia package that provides basic support for statistics.\nSymata.jl language for symbolic mathematics\nYao.jl Extensible, Efficient Quantum Algorithm Design for Humans.\nQuantumLab.jl A workbench for Quantum Chemistry and Quantum Physics in Julia\nQuantumOptics.jl Library for the numerical simulation of closed as well as open quantum systems."
+},
+
+{
+    "location": "toolchain/#Deep-Learning-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Deep Learning",
+    "category": "section",
+    "text": ""
+},
+
+{
+    "location": "toolchain/#Frameworks-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Frameworks",
+    "category": "section",
+    "text": "Knet.jl Koç University deep learning framework.\nTensorFlow.jl A Julia wrapper for TensorFlow\nMXNet.jl MXNet Julia Package - flexible and efficient deep learning in Julia"
 },
 
 {
@@ -345,51 +425,51 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "toolchain/#Data-Structures-1",
+    "location": "toolchain/#Others-2",
     "page": "Tool Chain for Physicists",
-    "title": "Data Structures",
+    "title": "Others",
+    "category": "section",
+    "text": "MLKernels.jl A Julia package for Mercer kernel functions (or the covariance functions used in Gaussian processes) that are used in the kernel methods of machine learning"
+},
+
+{
+    "location": "toolchain/#Data-Science-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Data Science",
+    "category": "section",
+    "text": ""
+},
+
+{
+    "location": "toolchain/#Data-Structure-1",
+    "page": "Tool Chain for Physicists",
+    "title": "Data Structure",
     "category": "section",
     "text": "LightGraphs.jl An optimized graphs package for Julia\nAbstractTrees.jl Abstract julia interfaces for working with trees\nDendriform.jl Dendriform di-algebra algorithms to compute using Loday\'s arithmetic on groves of planar binary trees."
 },
 
 {
-    "location": "toolchain/#Deep-Learning-1",
+    "location": "toolchain/#Data-Compression-and-Storage-1",
     "page": "Tool Chain for Physicists",
-    "title": "Deep Learning",
-    "category": "section",
-    "text": "Knet.jl Koç University deep learning framework.\nTensorFlow.jl A Julia wrapper for TensorFlow\nMXNet.jl MXNet Julia Package - flexible and efficient deep learning in Julia"
-},
-
-{
-    "location": "toolchain/#Serialization-1",
-    "page": "Tool Chain for Physicists",
-    "title": "Serialization",
+    "title": "Data Compression and Storage",
     "category": "section",
     "text": "JLD.jl Saving and loading julia variables while preserving native types\nJLD2.jl HDF5-compatible file format in pure Julia"
 },
 
 {
-    "location": "toolchain/#Developer\'s-Tools-1",
+    "location": "toolchain/#Data-Visualization-1",
     "page": "Tool Chain for Physicists",
-    "title": "Developer\'s Tools",
+    "title": "Data Visualization",
     "category": "section",
-    "text": "PackageCompiler.jl  Compile your Julia Package\nStatProfilerHTML.jl Show Julia profiling data in an explorable HTML page\nCxx.jl The Julia C++ Interface"
+    "text": "Interact.jl Interactive widgets to play with your Julia code\nPlots.jl Powerful convenience for Julia visualizations and data analysis\nPyPlot.jl This module provides a Julia interface to the Matplotlib plotting library from Python, and specifically to the matplotlib.pyplot module."
 },
 
 {
-    "location": "toolchain/#Symbolic-and-Metaprogramming-1",
+    "location": "toolchain/#Other-Developer\'s-Tools-1",
     "page": "Tool Chain for Physicists",
-    "title": "Symbolic & Metaprogramming",
+    "title": "Other Developer\'s Tools",
     "category": "section",
-    "text": "Symata.jl language for symbolic mathematics\nLazy.jl provides Julia with the cornerstones of functional programming"
-},
-
-{
-    "location": "toolchain/#Visualization-1",
-    "page": "Tool Chain for Physicists",
-    "title": "Visualization",
-    "category": "section",
-    "text": "Interact.jl Interactive widgets to play with your Julia code\nPlots.jl Powerful convenience for Julia visualizations and data analysis"
+    "text": "BenchmarkTools.jl BenchmarkTools makes performance tracking of Julia code easy by supplying a framework for writing and running groups of benchmarks as well as comparing benchmark results.\nPackageCompiler.jl  Compile your Julia Package\nStatProfilerHTML.jl Show Julia profiling data in an explorable HTML page\nCxx.jl The Julia C++ Interface\nPyCall.jl This package provides the ability to directly call and fully interoperate with Python from the Julia language.\nLazy.jl provides Julia with the cornerstones of functional programming"
 },
 
 {
