@@ -29,21 +29,14 @@ There are some useful tools (Packages) that will help you work with Julia in Phy
 - [JuMP.jl](https://github.com/JuliaOpt/JuMP.jl) Modeling language for Mathematical Optimization (linear, mixed-integer, conic, semidefinite, nonlinear)
 - [LowRankModels.jl](https://github.com/madeleineudell/LowRankModels.jl) LowRankModels.jl is a julia package for modeling and fitting generalized low rank models.
 
-## Mathematics
+## Mathematics and Physics
 - [Cliffords.jl](https://github.com/BBN-Q/Cliffords.jl) Efficient calculation of Clifford circuits in Julia.
 - [StatsBase.jl](https://github.com/JuliaStats/StatsBase.jl) StatsBase.jl is a Julia package that provides basic support for statistics.
 - [Symata.jl](https://github.com/jlapeyre/Symata.jl) language for symbolic mathematics
 
-## Physics
+- [Yao.jl](https://github.com/QuantumBFS/Yao.jl) Extensible, Efficient Quantum Algorithm Design for Humans.
 - [QuantumLab.jl](https://github.com/vonDonnerstein/QuantumLab.jl) A workbench for Quantum Chemistry and Quantum Physics in Julia
 - [QuantumOptics.jl](https://github.com/qojulia/QuantumOptics.jl) Library for the numerical simulation of closed as well as open quantum systems.
-
-
-## Data Structures
-
-- [LightGraphs.jl](https://github.com/JuliaGraphs/LightGraphs.jl) An optimized graphs package for Julia
-- [AbstractTrees.jl](https://github.com/Keno/AbstractTrees.jl) Abstract julia interfaces for working with trees
-- [Dendriform.jl](https://github.com/chakravala/Dendriform.jl) Dendriform di-algebra algorithms to compute using Loday's arithmetic on groves of planar binary trees.
 
 ## Deep Learning
 #### Frameworks
@@ -59,21 +52,26 @@ There are some useful tools (Packages) that will help you work with Julia in Phy
 #### Others
 - [MLKernels.jl](https://github.com/trthatcher/MLKernels.jl) A Julia package for Mercer kernel functions (or the covariance functions used in Gaussian processes) that are used in the kernel methods of machine learning
 
-## Compression and Storage
+## Data Science
+#### Data Structure
+- [LightGraphs.jl](https://github.com/JuliaGraphs/LightGraphs.jl) An optimized graphs package for Julia
+- [AbstractTrees.jl](https://github.com/Keno/AbstractTrees.jl) Abstract julia interfaces for working with trees
+- [Dendriform.jl](https://github.com/chakravala/Dendriform.jl) Dendriform di-algebra algorithms to compute using Loday's arithmetic on groves of planar binary trees.
 
+#### Data Compression and Storage
 - [JLD.jl](https://github.com/JuliaIO/JLD.jl) Saving and loading julia variables while preserving native types
 - [JLD2.jl](https://github.com/simonster/JLD2.jl) HDF5-compatible file format in pure Julia
 
-## Developer's Tools
+#### Data Visualization
+- [Interact.jl](https://github.com/JuliaGizmos/Interact.jl) Interactive widgets to play with your Julia code
+- [Plots.jl](https://github.com/JuliaPlots/Plots.jl) Powerful convenience for Julia visualizations and data analysis
+- [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) This module provides a Julia interface to the Matplotlib plotting library from Python, and specifically to the matplotlib.pyplot module.
 
+## Other Developer's Tools
+- [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl) BenchmarkTools makes performance tracking of Julia code easy by supplying a framework for writing and running groups of benchmarks as well as comparing benchmark results.
 - [PackageCompiler.jl](https://github.com/JuliaLang/PackageCompiler.jl)  Compile your Julia Package
 - [StatProfilerHTML.jl](https://github.com/tkluck/StatProfilerHTML.jl) Show Julia profiling data in an explorable HTML page
 - [Cxx.jl](https://github.com/Keno/Cxx.jl) The Julia C++ Interface
 - [PyCall.jl](https://github.com/JuliaPy/PyCall.jl) This package provides the ability to directly call and fully interoperate with Python from the Julia language.
 - [Lazy.jl](https://github.com/MikeInnes/Lazy.jl) provides Julia with the cornerstones of functional programming
 
-
-## Visualization
-- [Interact.jl](https://github.com/JuliaGizmos/Interact.jl) Interactive widgets to play with your Julia code
-- [Plots.jl](https://github.com/JuliaPlots/Plots.jl) Powerful convenience for Julia visualizations and data analysis
-- [PyPlot.jl](https://github.com/JuliaPy/PyPlot.jl) This module provides a Julia interface to the Matplotlib plotting library from Python, and specifically to the matplotlib.pyplot module.
