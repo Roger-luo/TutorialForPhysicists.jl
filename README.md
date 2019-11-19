@@ -6,10 +6,9 @@
 <!-- [![Code Coverage][coveralls-master-img]][coveralls-master-url]
 [![codecov.io][codcov-master-img]][codcov-master-url] -->
 
+**NOTE: This tutorial is out of date.**
 
-Julia Tutorial for Physicists. You can access the presentation here:
-
-[Julia: A Fresh New Approach to Numerical Computing](http://104.224.129.42/slides/the-julia-language/)
+I'm rewriting this tutorial now, you can check this meanwhile: https://juliaphysics.github.io/latest/index.html
 
 ## Contents
 
